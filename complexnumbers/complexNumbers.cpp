@@ -137,12 +137,8 @@ void displayComplexNumber(ComplexNumber num) {
 
 
 
-
-
-
 /*
-
-
+Calculation notes for reference:
 	a = num1.real
 	b = num1.imag
 	c = num2.real
@@ -150,22 +146,19 @@ void displayComplexNumber(ComplexNumber num) {
 
 	multiplication:
 	(ac - bd) + (ad + bc) i
-
-						(a		*	c)			(b		*	d)				(a	  *		d)				(b	  *		c)
+	(a * c)	(b * d) + (a * d) (b * c)
 	result.real = ((num1.real * num2.real) - (num1.imag * num2.imag))
 	result.imag = ((num1.real * num2.imag) + (num1.imag * num2.real)) i
-
 
 
 	division:
 
 		(ac + bd / c^2 + d^2)  + (bc - ad/ c^2 + d^2) i
-
-							(a     *     c)     +  	 (b      *   d)                       (b       *    c)    -   (a        *     d)
+		(a   *   c)   +   (b   *   d)/divisor  + (b   *   c)  -  (a   *    d)
+  
 		result.real = ((num1.real * num2.real) + (num1.imag * num2.imag)) / divider;
 
 		result.imag ((num1.imag * num2.real) - (num1.real * num2.imag)) / divider;
-
 
 	 */
 
